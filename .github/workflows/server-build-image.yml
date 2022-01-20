@@ -1,8 +1,7 @@
-# 0511af27-fc91-4b73-8c63-4d12a35bf20f
 name: server-build-push-image
 
 on:
-  [push, pull_request]:
+  push:
     branches:
       - 'main'
 
