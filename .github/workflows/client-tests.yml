@@ -11,4 +11,4 @@ jobs:
       - name: install
         run: cd client && npm i
       - name: run test
-        run: npm run test
+        run: npm test
