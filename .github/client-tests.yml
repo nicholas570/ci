@@ -1,0 +1,14 @@
+name: client-tests
+
+on: pull_request
+
+jobs:
+  test-client:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v2
+      - name: install
+        run: cd client && npm i
+      - name: run test
+        run: npm run test
